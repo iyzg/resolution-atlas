@@ -2,4 +2,4 @@
 
 ## TODO:
 
-- [] Clean up the code!
+- [  ] Clean up the code!
