@@ -65,7 +65,7 @@ d3.csv("https://gist.githubusercontent.com/iyzg/172dd2bb76f4c5c582dfd8b969fdce24
             .style("fill", color(row.topic))
             .style("opacity", 1)
             .on("mouseover", function (e) {
-                highlightDot(index, row.topic);
+                // highlightDot(index, row.topic);
                 Tooltip.style('visibility', 'visible');
             })
             .on("mousemove", (event, feature) => {
@@ -76,7 +76,7 @@ d3.csv("https://gist.githubusercontent.com/iyzg/172dd2bb76f4c5c582dfd8b969fdce24
             })
             .on("mouseout", function () {
                 Tooltip.style('visibility', 'hidden');
-                resetOpacity();
+                // resetOpacity();
             });
     });
 
