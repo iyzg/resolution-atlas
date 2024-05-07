@@ -1,0 +1,77 @@
+/* Basic CSS to set up the layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Hack', monospace;
+}
+
+/* .header {
+    width: 100%;
+    height: 10%;
+} */
+
+.container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+}
+
+.header {
+    width: 500px;
+    float: left;
+    padding: 15px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.graph {
+    flex-grow: 1;
+    /* border-right: 1px solid #ccc; */
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-left: 1px solid #ccc; */
+    /* background-color: #ffffff; */
+    overflow-y: auto;
+    /* background-color: #000; */
+}
+
+.sentence {
+    font-size: 13px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* Temporary background color for visibility */
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.word {
+    display: inline-block;
+    font-size: 20px;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    transform: translateY(-50%);
+}
+
+.fade-up {
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0%);
+}
